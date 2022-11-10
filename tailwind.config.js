@@ -5,6 +5,7 @@ module.exports = {
     extend: {
       fontFamily: {
         lexend: ["Lexend", "sans-serif"],
+        dancin: ["Dancing Script", "cursive"],
       },
     },
   },

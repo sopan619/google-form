@@ -1,13 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Document</title>
-</head>
-<body>
-    <div class="text-green-500">Hello</div>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lexend:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <title>Expense Tracker Form</title>
+  </head>
+  <body class="bg-[#F9F9F9]">
+    <!-- The Image is Here -->
+    <div class="image mt-4">
+      <img
+        src="expense.jpg"
+        alt="expense image"
+        class="w-[95vw] mx-auto rounded-xl border-b-4 border-fuchsia-600/80 shadow-xl"
+      />
+    </div>
+    <!-- The Heading is Here -->
+    <div class="heading flex flex-col items-center justify-center mt-5">
+      <h1 class="text-[40px] text-[#0F0E0E] font-lexend font-bold">
+        Expense Tracker
+      </h1>
+      <p class="w-[85%] text-[12px] font-lexend break-words text-slate-600">
+        <i>
+          Fill in the transaction details below, and it will be captured in a
+          Google sheet. You can analize the sheet for complete financial
+          overview. The Category and Amount is a required field and must be
+          filled properly!
+        </i>
+      </p>
+    </div>
+    <!-- The Form is Here -->
+    <div class="flex flex-col justify-center items-center mt-10">
+      <form
+        action="https://docs.google.com/forms/d/e/1FAIpQLSc7IUhZVPUdvL14nu3X8B5Zdk3yg3Mqsd_9MFb3MAp-EVXOFQ/formResponse"
+        class="space-y-5"
+      >
+        <div class="category">
+          <label for="entry.1404378563">Category</label>
+          <select name="entry.1404378563">
+            <option>Food</option>
+            <option>Personal</option>
+            <option>Home</option>
+          </select>
+        </div>
+        <div class="amount">
+          <label for="entry.1679532053">Amount</label>
+          <input type="number" name="entry.1679532053" placeholder="Amount" />
+        </div>
+        <div class="description">
+          <label for="entry.896363940">Description</label>
+          <input type="text" name="entry.896363940" placeholder="Description" />
+        </div>
+        <div class="btn">
+          <button type="submit" class="bg-[#c28ce4] px-3 py-2 rounded-md">
+            Submit Entry
+          </button>
+        </div>
+      </form>
+    </div>
+  </body>
 </html>

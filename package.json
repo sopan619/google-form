@@ -22,5 +22,8 @@
     "url": "https://github.com/sopan619/tailwindcss-harry-template/issues"
   },
   "homepage": "https://github.com/sopan619/tailwindcss-harry-template#readme",
-  "description": ""
+  "description": "",
+  "dependencies": {
+    "@tailwindcss/forms": "^0.5.3"
+  }
 }
